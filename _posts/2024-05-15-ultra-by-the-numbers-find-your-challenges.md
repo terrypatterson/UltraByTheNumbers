@@ -22,8 +22,6 @@ The move to Ultra Course view requires some courses which have many nested folde
 
 ```
 
-{
-
 -- would there be a way to count the folder depth in use on Original Courses from DDA?
 -- Mike Buchanan
 --identify possibly problematic folder depth in Original courses
@@ -57,7 +55,6 @@ and cte.depth > 3
 and cm.ultra_status = 'C'
 order by cm.course_id, cte.path`
 
-}
 
 ```
 
