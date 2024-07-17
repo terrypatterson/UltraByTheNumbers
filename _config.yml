@@ -14,16 +14,16 @@ timezone: America/Chicago
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Terry Patterson Documentation # the main title
+title: Implementing Learn Ultra By The Numbers # the main title
 
-tagline: If I did it...this is how I would do it # it will display as the sub-title
+tagline: Using Data During Your Blackboard Ultra Course Migration  # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  My documentation focused website for thing I do with Blackboard.
+  
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://terrypatterson.github.io"
+url: "https://terrypatterson.github.io/UltraByTheNumbers"
 
 github:
   username: terrypatterson # change to your github username
@@ -31,15 +31,15 @@ github:
 twitter:
   username: terrypatterson # change to your twitter username
 
-social:
+#social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Terry Patterson
-  email: terrypatterson@gmail.com # change to your email address
-  links:
+  #name: Terr
+  #email: terrypatterson@gmail.com # change to your email address
+  #links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/terrypatterson # change to your twitter homepage
-    - https://github.com/terrypatterson # change to your github homepage
+    #- https://twitter.com/terrypatterson # change to your twitter homepage
+    #- https://github.com/terrypatterson # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -66,7 +66,7 @@ analytics:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
   matomo:
-    id: 3 # fill in your Matomo ID
+    id: 4 # fill in your Matomo ID
     domain: terrytips.matomo.cloud # fill in your Matomo domain
   cloudflare:
     id: # fill in your Cloudflare Web Analytics token
