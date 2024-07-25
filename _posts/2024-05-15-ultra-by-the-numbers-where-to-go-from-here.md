@@ -13,7 +13,7 @@ Once an institution understands where they are regarding a move to the Ultra Cou
 
 Institutions can take one of two steps to move Blackboard courses onto the Ultra experience. One is a phased approach, moving content over by department, division, or by delivery method. Another approach is to migrate all Blackboard courses to the Ultra experience in a single term. This is commonly called a cutover approach. Here are the pros and cons of both options.
 
-<table>
+<table width="90%">
 <th colspan="2">Phased</th>
 <tr><td>Allows for comparative delivery analysis</td><td>Multiple course experiences could cause confusion for students</td></tr>
 <tr><td>Ultra champions / instructors to fully experience UCV and share feedback to others</td><td>Instructors must retain workflows for both course views during transition</td></tr>
@@ -23,7 +23,7 @@ Institutions can take one of two steps to move Blackboard courses onto the Ultra
 <br />
 <br />
 
-<table>
+<table width="90%">
 <th colspan="2">Cutover</th>
 <tr><td>Clear delineation between student / instructor experiences</td><td>Requires everyone to be prepared for new course view / experience</td></tr>
 <tr><td>Removes duplication of supporting two course experiences for instructors and students</td><td>Inability to confirm and/or test changes with students to ensure success</td></tr>
