@@ -38,10 +38,46 @@ When moving to Ultra Course view, an institution can take many different approac
 
 #### Developmental Course Shells - The institution creates course shells for instructors to develop new course materials in the Ultra Course view. Normally these should be available for a limited time during the migration from Original to Ultra.
 
-#### Utilize Current Course Shells - The institution creates course shells 
+#### Utilize Current Course Shells - The institution creates course shells that will be used for instruction and allows development of Ultra Course content before, during, or after instruction
+
+#### Course Template Structure - The institution creates Ultra course templates for courses which will then be copied into instructional course shells.
 
 ## Instructor Activity Measurements
 
+While monitoring specific instructors might create some privacy concerns at intitutions, understanding who is working in Ultra courses can provide great insight on who your early adopters and Ultra "champions" can be within a department, college, or your entire institution.
+
+Generalized data about instructor interactions can be helpful just to understand what communication and training offerings have the greatest impact to engage instructors with Ultra courses.
+
+While we always want to try to use the "carrot" approach when pushing adoption. Institutions may have need to report to leadership users and/or departments failing to meet adoption deadlines for a successful roll-out.
+
+The code below will allow you to find the most active users within a specific set of courses.
+
+```
+select u.user_id as "Username",
+	   string_agg(distinct u.firstname||' '||u.lastname, ', ') as "User",
+	   COUNT(distinct aa.session_id) as "Sessions",
+	   COUNT(aa.pk1) as "Events"
+from activity_accumulator aa
+	join users u
+	 on aa.user_pk1 = u.pk1
+	join course_main cm
+	 on aa.course_pk1 = cm.pk1
+where cm.course_id like '%UBO%'
+  and u.user_id not like '%_PreviewUser'
+  and u.user_id not in ('admin_user1','admin_user2','admin_user3')
+group by "Username"
+order by "Sessions" desc;
+```
+
+Here's a sample of the results you will get from the query above.
+
+![image of a list of names](assets/img/posts/ultra-pres/champion-list.png)
 
 ## Implementation by Department
+
+Similar to the previous topic discussed. Department monitoring offers valuable information about training successes and gaps, departments leading the migration to Ultra, and identify departments lagging in their Ultra adoption processes.
+
+Here's a bar graph broken down by department.
+
+![a bar graph broken down by departments](assets/img/posts/ultra-pres/department_monitoring.png)
 
